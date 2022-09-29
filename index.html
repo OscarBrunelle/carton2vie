@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+	<link rel="stylesheet" type="text/css" href="shared.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="desktop.css">
+	<link rel="icon" type="image/png" href="icon.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#FF0000"/>
+	<meta charset="UTF-8">
+	<meta name="description" content="Site officiel de Carton Seconde Vie.">
+	<meta name="keywords" content="Carton Seconde Vie Hervé Brunelle">
+	<meta name="author" content="Hervé Brunelle">
+	<title>Carton Seconde Vie</title>
+</head>
+
+<body>
+	<header class="new_header">
+		<div><img src="logo.jpg"></div>
+		<nav>
+			<ul>
+				<li class="nav-tab active">
+					<a href="#">Prochains événements</a>
+				</li>
+				<li class="nav-tab">
+					<a href="contact/index.html">Contact & Médias</a>
+				</li>
+			</ul>
+		</nav>
+		<div><button id="burger" onclick="toggle_side_nav()">Burger</button></div>
+	</header>
+
+	<div id="sidenav">
+		<button onclick="close_side_nav()">Close</button>
+		<ul>
+			<li><a class="active" href="#">Prochains événements</a></li>
+			<li><a href="contact/index.html">Contact & Médias</a></li>
+		</ul>
+	</div>
+
+	<main id="main" role="main">
+		<div class="title-container">
+			<h1 class="title">Carton Seconde Vie</h1>
+			<p class="subtitle">"C'est la seconde vie de ce carton."</p>
+		</div>
+		<ul class="events_list">
+			<h3>Vous trouverez ci-dessous la liste des prochains événements auxquels je participerai, n'hésitez pas à venir me voir!</h3>
+			<li>
+				<div>
+					<h4>Salon de l'habitat - Angoulême</h4>
+					<span>Du 30 septembre au 2 octobre 2022 / 09h30 - 22h</span>
+					<a href="https://salondelhabitat16.fr/">https://salondelhabitat16.fr/</a>
+				</div>
+				<span class="description">J'aurai un stand lors du salon de l'habitat, l'occasion de vous présenter un de mes projets les plus ambitieux !</span>
+			</li>
+			<li>
+				<div>
+					<h4>Salon de l'habitat - Angoulême</h4>
+					<span>Du 30 septembre au 2 octobre 2022 / 09h30 - 22h</span>
+					<a href="https://salondelhabitat16.fr/">https://salondelhabitat16.fr/</a>
+				</div>
+				<span class="description">J'aurai un stand lors du salon de l'habitat, l'occasion de vous présenter un de mes projets les plus ambitieux !</span>
+			</li>
+		</ul>
+	</main>
+
+	<footer>
+		<a href="#top">Haut de la page</a>
+		<div></div>
+		<a>Auteur: Oscar Brunelle</a>
+	</footer>
+
+	<script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
