@@ -1,0 +1,33 @@
+.realisations {
+	padding: 10px;
+	display: grid;
+	gap: 10px;
+	justify-items: center;
+}
+
+.realisations h3 {
+	font-size: 16px;
+}
+
+.realisations>li {
+	width: 100%;
+	max-width: 1000px;
+	padding: 10px;
+	border: 1px solid black;
+    border-radius: 10px;
+	display: grid;
+	gap: 20px;
+}
+
+.realisations>li :first-child {
+	display: grid;
+	gap: 5px;
+}
+
+.realisations>li h4 {
+	font-weight: bold;
+}
+
+.realisations ul img {
+	width: 100%;
+}

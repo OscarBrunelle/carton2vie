@@ -6,7 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="../shared.css">
 	<link rel="stylesheet" type="text/css" href="../main.css">
 	<link rel="stylesheet" type="text/css" href="../desktop.css">
-	<link rel="icon" type="image/png" href="../icon.jpg">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="icon" type="image/png" href="../icon.svg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#FF0000"/>
 	<meta charset="UTF-8">
@@ -35,25 +36,15 @@
 				</li>
 			</ul>
 		</nav>
-		<div><button id="burger" onclick="toggle_side_nav()">Burger</button></div>
+		<div class="burger-container"><button id="burger" onclick="toggle_side_nav()"><svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="1"></rect><rect y="5" width="16" height="1"></rect><rect y="10" width="16" height="1"></rect></svg></button></div>
 	</header>
-
-	<div id="sidenav">
-		<button onclick="close_side_nav()">Close</button>
-		<ul>
-			<li><a href="../index.html">Accueil</a></li>
-			<li><a href="#" class="active">Actualités</a></li>
-			<li><a href="../realisations/index.html">Réalisations</a></li>
-			<li><a href="../contact/index.html">Contact</a></li>
-		</ul>
-	</div>
 
 	<main id="main" role="main">
 		<div class="title-container">
 			<h1 class="title">Carton Seconde Vie</h1>
 			<p class="subtitle">"C'est la seconde vie de ce carton."</p>
 		</div>
-		<ul class="events_list">
+		<ul class="actualites">
 			<h3>Vous trouverez ci-dessous la liste des prochains événements auxquels je participerai, n'hésitez pas à venir me voir!</h3>
 			<li>
 				<div>
@@ -61,7 +52,7 @@
 					<span>Du 30 septembre au 2 octobre 2022 / 09h30 - 22h</span>
 					<a href="https://salondelhabitat16.fr/">Lien vers le site pour plus d'infos</a>
 				</div>
-				<span class="description">J'aurai un stand lors du salon de l'habitat, l'occasion de vous présenter un de mes projets les plus ambitieux !</span>
+				<span class="description">J'aurai un stand lors du Salon de l'Habitat, l'occasion de vous présenter un de mes projets les plus ambitieux !</span>
 			</li>
 			<li>
 				<div>
@@ -69,16 +60,24 @@
 					<span>Le 25 septembre 2022 / 10h - 18h</span>
 					<a href="https://www.roullet-saint-estephe.fr/evenement/1er-salon-anti-gaspi-et-solidaire/">Lien vers le site pour plus d'infos</a>
 				</div>
-				<span class="description">J'aurai un stand lors du salon de l'habitat, l'occasion de vous présenter un de mes projets les plus ambitieux !</span>
+				<span class="description">Retrouvez moi au Salon Agir le 25 !</span>
 			</li>
 		</ul>
 	</main>
 
 	<footer>
 		<a href="#top">Haut de la page</a>
-		<div></div>
-		<a>Auteur: Oscar Brunelle</a>
 	</footer>
+
+	<div id="sidenav">
+		<button onclick="close_side_nav()" id="sidenav-close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z"></path></svg></button>
+		<ul>
+			<li><a href="../index.html">Accueil</a></li>
+			<li><a href="#" class="active">Actualités</a></li>
+			<li><a href="../realisations/index.html">Réalisations</a></li>
+			<li><a href="../contact/index.html">Contact</a></li>
+		</ul>
+	</div>
 
 	<script type="text/javascript" src="../main.js"></script>
 </body>

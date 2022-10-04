@@ -6,7 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="../shared.css">
 	<link rel="stylesheet" type="text/css" href="../main.css">
 	<link rel="stylesheet" type="text/css" href="../desktop.css">
-	<link rel="icon" type="image/png" href="../icon.jpg">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="icon" type="image/png" href="../icon.svg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#FF0000"/>
 	<meta charset="UTF-8">
@@ -35,18 +36,8 @@
 				</li>
 			</ul>
 		</nav>
-		<div><button id="burger" onclick="toggle_side_nav()">Burger</button></div>
+		<div class="burger-container"><button id="burger" onclick="toggle_side_nav()"><svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="1"></rect><rect y="5" width="16" height="1"></rect><rect y="10" width="16" height="1"></rect></svg></button></div>
 	</header>
-
-	<div id="sidenav">
-		<button onclick="close_side_nav()">Close</button>
-		<ul>
-			<li><a href="../index.html">Accueil</a></li>
-			<li><a href="../actualites/index.html">Actualités</a></li>
-			<li><a href="../realisations/index.html">Réalisations</a></li>
-			<li><a href="#" class="active">Contact</a></li>
-		</ul>
-	</div>
 
 	<main id="main" role="main">
 		<div class="title-container">
@@ -54,18 +45,29 @@
 			<p class="subtitle">"C'est la seconde vie de ce carton."</p>
 		</div>
 
-		<ul style="text-align: center;">
-			<li><a href="#">Téléphone (à remplacer)</a></li>
-			<li><a href="#">Email (à remplacer)</a></li>
-			<li><a href="https://www.instagram.com/cartonsecondevie/">Compte instagram</a></li>
-		</ul>
+		<div class="contact_list">
+			<ul>
+				<h3>Pour toute demande de collaboration, vous pouvez me joindre:</h3>
+				<li>Par téléphone au <a href="tel:0749504368">0749504368</a></li>
+				<li>Par email à <a href="mailto:hbrhouse@gmail.com">hbrhouse@gmail.com</a></li>
+				<li>Vous pouvez aussi me retrouver sur instagram: <a href="https://www.instagram.com/cartonsecondevie/">@cartonsecondevie</a></li>
+			</ul>
+		</div>
 	</main>
 
 	<footer>
 		<a href="#top">Haut de la page</a>
-		<div></div>
-		<a>Auteur: Oscar Brunelle</a>
 	</footer>
+
+	<div id="sidenav">
+		<button onclick="close_side_nav()" id="sidenav-close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z"></path></svg></button>
+		<ul>
+			<li><a href="../index.html">Accueil</a></li>
+			<li><a href="../actualites/index.html">Actualités</a></li>
+			<li><a href="../realisations/index.html">Réalisations</a></li>
+			<li><a href="#" class="active">Contact</a></li>
+		</ul>
+	</div>
 
 	<script type="text/javascript" src="../main.js"></script>
 </body>

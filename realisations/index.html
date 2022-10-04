@@ -6,7 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="../shared.css">
 	<link rel="stylesheet" type="text/css" href="../main.css">
 	<link rel="stylesheet" type="text/css" href="../desktop.css">
-	<link rel="icon" type="image/png" href="../icon.jpg">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="icon" type="image/png" href="../icon.svg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#FF0000"/>
 	<meta charset="UTF-8">
@@ -35,11 +36,33 @@
 				</li>
 			</ul>
 		</nav>
-		<div><button id="burger" onclick="toggle_side_nav()">Burger</button></div>
+		<div class="burger-container"><button id="burger" onclick="toggle_side_nav()"><svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="1"></rect><rect y="5" width="16" height="1"></rect><rect y="10" width="16" height="1"></rect></svg></button></div>
 	</header>
 
+	<main id="main" role="main">
+		<div class="title-container">
+			<h1 class="title">Carton Seconde Vie</h1>
+			<p class="subtitle">"C'est la seconde vie de ce carton."</p>
+		</div>
+
+		<ul class="realisations">
+			<h3>Petite liste des réalisations dont je suis fier:</h3>
+			<li>
+				<h4>Salon de l'habitat 2022</h4>
+				<span>Lors du salon de l'habitat 2022, j'ai eu l'occasion de présenter un concept de maison en carton, ainsi que de plusieurs meubles !<br>L'occasion pour moi de passer dans la Charente Libre: <a href="https://www.charentelibre.fr/charente/angouleme/angouleme-sa-maison-est-en-carton-12419712.php">lien vers l'article</a>.</span>
+				<ul class="realisation-pictures">
+					<li><img src="images/salondelhabitat2022/maison.jpg"></li>
+				</ul>
+			</li>
+		</ul>
+	</main>
+
+	<footer>
+		<a href="#top">Haut de la page</a>
+	</footer>
+
 	<div id="sidenav">
-		<button onclick="close_side_nav()">Close</button>
+		<button onclick="close_side_nav()" id="sidenav-close"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41L12.59 0Z"></path></svg></button>
 		<ul>
 			<li><a href="../index.html">Accueil</a></li>
 			<li><a href="../actualites/index.html">Actualités</a></li>
@@ -47,19 +70,6 @@
 			<li><a href="../contact/index.html">Contact</a></li>
 		</ul>
 	</div>
-
-	<main id="main" role="main">
-		<div class="title-container">
-			<h1 class="title">Carton Seconde Vie</h1>
-			<p class="subtitle">"C'est la seconde vie de ce carton."</p>
-		</div>
-	</main>
-
-	<footer>
-		<a href="#top">Haut de la page</a>
-		<div></div>
-		<a>Auteur: Oscar Brunelle</a>
-	</footer>
 
 	<script type="text/javascript" src="../main.js"></script>
 </body>
